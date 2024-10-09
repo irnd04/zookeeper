@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'kr.irnd04'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper
+    implementation group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.9.2'
+}
+
+test {
+    useJUnitPlatform()
+}
