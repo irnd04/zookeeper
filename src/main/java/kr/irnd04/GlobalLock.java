@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
+// https://zookeeper.apache.org/doc/r3.9.2/recipes.html
 public class GlobalLock {
 
     private static final String LOCK_ROOT_PATH = "/locks";  // 락의 루트 노드 경로
